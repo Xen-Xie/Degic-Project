@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scrolling-wrapper {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .scrolling-container {
+    margin-top: 20;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 20px 0;
+  }
+  
